@@ -1,16 +1,27 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:orientation="vertical"
-    android:gravity="center"
-    android:padding="16dp"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    android:gravity="center">
+
+    <TextView
+        android:id="@+id/descriptionText"
+        android:text="AI vagy valóság?\n\nKét képet látsz – az egyiket mesterséges intelligencia készítette, a másik egy valódi fotó. Vajon meg tudod különböztetni őket? Figyeld meg a részleteket, bízz a megérzéseidben, és döntsd el: melyik az AI alkotása!\n\nSok sikert – és ne feledd, a látszat néha csal! 👀"
+        android:textSize="16sp"
+        android:textAlignment="center"
+        android:layout_marginBottom="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:visibility="visible"/>
 
     <Button
         android:id="@+id/startButton"
         android:text="Játék indítása"
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content"/>
+        android:layout_height="wrap_content"
+        android:visibility="visible"/>
 
     <TextView
         android:id="@+id/roundText"
@@ -22,18 +33,19 @@
         android:layout_height="wrap_content"/>
 
     <LinearLayout
-        android:orientation="horizontal"
-        android:visibility="gone"
         android:id="@+id/imageLayout"
-        android:layout_marginTop="16dp"
+        android:orientation="horizontal"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content">
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:visibility="gone">
 
         <ImageView
             android:id="@+id/imageLeft"
             android:layout_width="0dp"
             android:layout_weight="1"
-            android:layout_height="200dp"
+            android:layout_height="300dp"
+            android:padding="0dp"
             android:scaleType="fitCenter"
             android:adjustViewBounds="true" />
 
@@ -41,7 +53,8 @@
             android:id="@+id/imageRight"
             android:layout_width="0dp"
             android:layout_weight="1"
-            android:layout_height="200dp"
+            android:layout_height="300dp"
+            android:padding="0dp"
             android:scaleType="fitCenter"
             android:adjustViewBounds="true" />
     </LinearLayout>
