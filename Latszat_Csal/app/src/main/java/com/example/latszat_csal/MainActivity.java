@@ -96,7 +96,7 @@ public class MainActivity extends AppCompatActivity {
         int realImage = realImageList.get(round);
 
         round++;
-        roundText.setText("Kör: " + round + "/" + MAX_ROUNDS);
+        roundText.setText("Kör: " + round + "/" + MAX_ROUNDS + "\nMelyik az AI kép?");
 
         isLeftAI = new Random().nextBoolean();
 

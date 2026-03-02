@@ -27,6 +27,7 @@
         android:id="@+id/roundText"
         android:text="Kör: 0/20"
         android:textSize="18sp"
+        android:gravity="center"
         android:visibility="gone"
         android:layout_marginTop="16dp"
         android:layout_width="wrap_content"
