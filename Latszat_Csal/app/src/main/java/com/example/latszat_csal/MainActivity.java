@@ -39,14 +39,28 @@ public class MainActivity extends AppCompatActivity {
 
         // Képek betöltése (Ellenőrizd, hogy a nevek pontosak-e a drawable mappában!)
         aiImageList.clear();
-        aiImageList.add(R.drawable.ai_1);
-        aiImageList.add(R.drawable.ai_2);
-        aiImageList.add(R.drawable.ai_3);
+        aiImageList.add(R.drawable.ai1);
+        aiImageList.add(R.drawable.ai2);
+        aiImageList.add(R.drawable.ai3);
+        aiImageList.add(R.drawable.ai4);
+        aiImageList.add(R.drawable.ai5);
+        aiImageList.add(R.drawable.ai6);
+        aiImageList.add(R.drawable.ai7);
+        aiImageList.add(R.drawable.ai8);
+        aiImageList.add(R.drawable.ai9);
+        aiImageList.add(R.drawable.ai10);
 
         realImageList.clear();
-        realImageList.add(R.drawable.real_1);
-        realImageList.add(R.drawable.real_2);
-        realImageList.add(R.drawable.real_3);
+        realImageList.add(R.drawable.real1);
+        realImageList.add(R.drawable.real2);
+        realImageList.add(R.drawable.real3);
+        realImageList.add(R.drawable.real4);
+        realImageList.add(R.drawable.real5);
+        realImageList.add(R.drawable.real6);
+        realImageList.add(R.drawable.real7);
+        realImageList.add(R.drawable.real8);
+        realImageList.add(R.drawable.real9);
+        realImageList.add(R.drawable.real10);
 
         MAX_ROUNDS = Math.min(aiImageList.size(), realImageList.size());
 
